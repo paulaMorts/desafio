@@ -1,0 +1,99 @@
+body {
+    background: #e29405;
+}
+.table {
+	margin-top: 20px;
+}
+.form-control {
+    margin-bottom: 5px;
+    background: #f9f9f9;
+    border-color: #f9f9f9;
+    box-shadow: none;
+}
+.selecionado {
+	background-color: yellow;
+}
+.negrito {
+	font-weight: bold;
+}
+.filtro {
+    background: #e4e4e4;
+}
+.filtro__button {
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    display: table;
+    width: auto;
+    margin-bottom: 10px;
+    padding: 6px 25px;
+    width: 100%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.filtro__button:hover {
+    text-decoration: none;
+    background: #020256;
+    color: #fff;
+}
+.filtro__button:focus {
+    background: #020256;
+    color: #fff;
+    text-decoration: unset;
+}
+.bloco-contato {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    border-top: 130px solid #020256;
+}
+.form__add {
+    display: block;
+    position: relative;
+    float: right;
+    width: 180px !important;
+    height: 45px !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    background: #020256;
+    margin: 20px 0;
+}
+.contatoForm {
+    display: inline-block;
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 5px;
+}
+.contatoForm__field, .contatoForm__field--first, .contatoForm__field--last {
+    height: 45px;
+}
+.contatoForm__field--button-add {
+    display: block;
+    position: relative;
+    float: right;
+    width: 180px !important;
+    height: 45px !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    background: #020256;
+}
+
+.contatoForm__field--button-cancel {
+    display: block;
+    position: relative;
+    float: right;
+    width: 180px !important;
+    height: 45px !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    background: #da0e0e;
+}
+
+.form {
+    background: #fff;
+}
