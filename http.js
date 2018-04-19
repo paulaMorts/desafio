@@ -1,6 +1,6 @@
 var router = require('./router');
 
-var app = router(9001);
+var app = router(3212);
 
 var contatos = [
 	{nome: "Edjan Souza Santos", data: "1974-01-01", sexo: {nome: "Masculino", codigo: "M"}},

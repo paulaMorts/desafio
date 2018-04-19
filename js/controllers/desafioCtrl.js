@@ -4,12 +4,12 @@ angular.module("desafio").controller("desafioCtrl", function ($scope, $http) {
 				$scope.sexos = [];
 
 				var carregarContatos = function() {
-					$http.get("http://localhost:9001/contatos").then(function(data){
+					$http.get("dados/users.json").then(function(data){
 						$scope.contatos = data.data;
 					});
 				};
 				var carregarSexos = function() {
-					$http.get("http://localhost:9001/sexos").then(function(data){
+					$http.get("/dados/gender.json").then(function(data){
 						$scope.sexos = data.data;
 					});;
 				};
