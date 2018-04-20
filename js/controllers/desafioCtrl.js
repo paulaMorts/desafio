@@ -30,12 +30,15 @@ angular.module("desafio").controller("desafioCtrl", function ($scope, $http) {
 				};
 
 				$scope.iconGender = function(texto) {
+					console.log(texto);
+					var gender;
 					if (texto=="Masculino"){
-						$scope.gender="fa fa-mars";
+						gender="fa fa-mars";
 					}
 					if (texto=="Feminino"){
-						$scope.gender="fa fa-venus"
+						gender="fa fa-venus"
 					}
+					return gender;
 				}
 
 				$scope.classe1 = "selecionado";

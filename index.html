@@ -35,6 +35,7 @@
 							<td>{{contato.nome | uppercase}}</td>
 							<td>{{contato.data | date: 'dd/MM/yyyy'}}</td>
 							<td ng-value="iconGender(contato.sexo.nome)" ng-model="gender"><icon class='{{gender}}' aria-hidden='true'></i></td>
+							<td>{{contato.sexo.nome}}</td>
 						</tr>
 					</table>
 					<button class="btn btn-primary btn-block form__add" ng-click="openForm=true">+ Adicionar</button>
