@@ -32,25 +32,24 @@
 							<th>Sexo</th>
 						</tr>
 						<tr ng-class="{'selecionado negrito': contato.selecionado}" ng-repeat="contato in contatos | filter:criterioBusca | orderBy:criterioOrdenacao:direcaoDaOrdenacao">
-							<td>{{contato.nome | uppercase}}</td>
+							<td>{{contato.nome | uppercase}}- {{$ctrl.$id}}</td>
 							<td>{{contato.data | date: 'dd/MM/yyyy'}}</td>
-							<!-- <td ng-value="iconGender">({{contato.sexo.nome}})<i class="fa fa-mars" aria-hidden="true"></i></td> -->
-							<td ng-model="iconGender(contato.sexo.nome)" ng-change="iconGender(contato.sexo.nome)">{{texto}}</td>
+							<td ng-value="iconGender(contato.sexo.nome)" ng-model="gender"><icon class='{{gender}}' aria-hidden='true'></i></td>
 						</tr>
 					</table>
 					<button class="btn btn-primary btn-block form__add" ng-click="openForm=true">+ Adicionar</button>
 					<form class="contatoForm" ng-show="openForm" name="contatoForm">
 						<div class="row">
 							<div class="col-sm-12">
-								<label>Nome</label>
-								<input class="form-control contatoForm__field--first" type="text" ng-model="contato.nome" name="nome" ng-minlength="10" ng-required="true" placeholder="nome"/>
+								<label class="contatoForm__label">Nome</label>
+								<input class="form-control contatoForm__field--first" type="text" ng-model="contato.nome" name="nome" ng-required="true" placeholder="nome"/>
 							</div>
 							<div class="col-sm-3">
-								<label>Dt Nascimento</label>
+								<label class="contatoForm__label">Dt Nascimento</label>
 								<input class="form-control contatoForm__field" type="date" ng-model="contato.data" name="data" ng-required="true"/>
 							</div>
 							<div class="col-sm-3">
-								<label>Sexo</label>
+								<label class="contatoForm__label">Sexo</label>
 								<select class="form-control contatoForm__field--last" ng-model="contato.sexo" ng-options="sexo.nome for sexo in sexos">
 									<option value="">Sexo</option>
 								</select>

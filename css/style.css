@@ -80,6 +80,8 @@ body {
     text-align: center;
     font-weight: bold;
     background: #020256;
+    border-bottom: 5px solid #00001d;
+    margin-top: 25px;
 }
 
 .contatoForm__field--button-cancel {
@@ -92,6 +94,12 @@ body {
     text-align: center;
     font-weight: bold;
     background: #da0e0e;
+    border-bottom: 5px solid #af0404;
+    margin-top: 25px;
+}
+
+.contatoForm__label {
+    text-transform: uppercase;
 }
 
 .form {
