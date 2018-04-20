@@ -34,7 +34,8 @@
 						<tr ng-class="{'selecionado negrito': contato.selecionado}" ng-repeat="contato in contatos | filter:criterioBusca | orderBy:criterioOrdenacao:direcaoDaOrdenacao">
 							<td>{{contato.nome | uppercase}}</td>
 							<td>{{contato.data | date: 'dd/MM/yyyy'}}</td>
-							<td ng-value="iconGender(contato.sexo.nome)" ng-model="gender"><icon class='{{gender}}' aria-hidden='true'></i></td>
+							<td ng-value="iconGender(contato.sexo.nome)" ng-model="gender">
+								<icon ng-class="{ 'fa fa-mars': contato.sexo.nome == 'Masculino', 'fa fa-venus': contato.sexo.nome == 'Feminino'}" aria-hidden='true'></i></td>						
 						</tr>
 					</table>
 					<button class="btn btn-primary btn-block form__add" ng-click="openForm=true">+ Adicionar</button>
