@@ -3,8 +3,9 @@
 		<title>
 			Desafio
 		</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">	
 		<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -43,21 +44,21 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<label class="contatoForm__label">Nome</label>
-								<input class="form-control contatoForm__field--first" type="text" ng-model="contato.nome" name="nome" ng-required="true" placeholder="nome"/>
+								<input class="form-control contatoForm__field--first" type="text" ng-model="contato.nome" name="nome" ng-required="true" ui-date="dateOptions" placeholder="nome"/>
 							</div>
-							<div class="col-sm-3">
+							<div class="col-md-3 col-sm-6">
 								<label class="contatoForm__label">Dt Nascimento</label>
 								<input class="form-control contatoForm__field" type="date" ng-model="contato.data" name="data" ng-required="true"/>
 							</div>
-							<div class="col-sm-3">
+							<div class="col-md-3 col-sm-6">
 								<label class="contatoForm__label">Sexo</label>
 								<select class="form-control contatoForm__field--last" ng-model="contato.sexo" ng-options="sexo.nome for sexo in sexos">
 									<option value="">Sexo</option>
 								</select>
 							</div>
-							<div class="col-sm-3">
+							<div class="col-md-3 col-sm-6 col-xs-12">
 								<button class="btn btn-danger btn-block contatoForm__field--button-cancel" ng-click="cancelarCadasro(contato)" ng-disabeld="!isContatoSelecionado(contatos)">Cancelar</button></div>
-							<div class="col-sm-3">
+							<div class="col-md-3 col-sm-6 col-xs-12">
 								<button class="btn btn-primary btn-block contatoForm__field--button-add" ng-click="adicionarContato(contato)" ng-disabled="contatoForm.$invalid">Salvar</button></div>
 						</div>
 					</form>
