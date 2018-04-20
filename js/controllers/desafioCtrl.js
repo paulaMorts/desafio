@@ -31,10 +31,10 @@ angular.module("desafio").controller("desafioCtrl", function ($scope, $http) {
 
 				$scope.iconGender = function(texto) {
 					var gender;
-					if (texto ==="Masculino"){
+					if (texto =="Masculino"){
 						gender="fa fa-mars";
 					}
-					else if (texto === "Feminino"){
+					if (texto == "Feminino"){
 						gender="fa fa-venus"
 					}
 					return gender;
