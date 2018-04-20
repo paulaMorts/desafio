@@ -70,6 +70,9 @@ body {
 .contatoForm__field, .contatoForm__field--first, .contatoForm__field--last {
     height: 45px;
 }
+.contatoForm__field input, .contatoForm__field--first  input, .contatoForm__field--last  input, .contatoForm__field--button-add, .contatoForm__field--button-cancel {
+    max-width:100%;
+}
 .contatoForm__field--button-add {
     display: block;
     position: relative;
@@ -112,7 +115,11 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-
+@media only screen and (max-width: 450px) {
+    .contatoForm__field--button-cancel, .contatoForm__field--button-add {
+        width: 100% !important;
+    }
+}
 @media only screen and (max-width: 768px) {
     .filtro, .form {
         padding: 10px;
@@ -120,5 +127,9 @@ body {
 
     .bloco-contato {
         display: block;
+    }
+    .contatoForm {
+        display: block;
+        margin-top: 110px;
     }
 }
